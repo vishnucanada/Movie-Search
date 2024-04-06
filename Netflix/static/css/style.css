@@ -1,0 +1,33 @@
+/* style.css */
+
+/* Ensure the movies are displayed in a grid layout */
+#search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the width as needed */
+    grid-gap: 20px; /* Add some space between the movies */
+}
+
+/* Decrease the size of the movie poster */
+.movie img {
+    width: 100%; /* Make the image fill the container */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the movie info is centered and properly aligned */
+.movie-info {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f5f5f5; /* Add a background color for better readability */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Make the website more responsive */
+@media screen and (max-width: 600px) {
+    /* Adjust the grid layout for smaller screens */
+    #search-results {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the width as needed */
+    }
+}
