@@ -3,7 +3,7 @@ import configparser
 from flask import Flask, render_template, request, jsonify
 
 config = configparser.ConfigParser()
-config.read('api_key.ini')
+config.read('config.ini')
 API_KEY = config['API_KEYS']['review_api']
 
 
